@@ -4,6 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
-    path('', views.index, name="https://protected-journey-63770.herokuapp.com/"),
+    path('', views.index, name="protected-journey-63770.herokuapp.com/"),
     ''
 ]

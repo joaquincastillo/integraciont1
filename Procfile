@@ -1,1 +1,0 @@
-web: gunicorn t1integracion.wsgi

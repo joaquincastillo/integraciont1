@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<% load films%>
 <head>
     <meta charset="UTF-8">
     <title> T1 de Joaquin Castillo - SWAPI</title>
@@ -18,12 +19,17 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <th scope="row">1</th>
-      <td><%films[0]["name"]%></td>
-      <td>Otto</td>
-      <td>@mdo</td>
-    </tr>
+    {%  if films %}
+        {%  for film in films %}
+        <tr>
+          <th scope="row">1</th>
+          <td>{{film.name }}</td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
+        {% endfor %}
+    {%  endif %}
+
     <tr>
       <th scope="row">2</th>
       <td>Jacob</td>

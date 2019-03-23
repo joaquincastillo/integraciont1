@@ -20,9 +20,10 @@
   <tbody>
     {%  if films %}
         {%  for film in films %}
+            {% for f in film %}
         <tr>
           <th scope="row">1</th>
-          <td>{{film.id }}</td>
+          <td>{{f.title }}</td>
           <td>Otto</td>
           <td>@mdo</td>
         </tr>

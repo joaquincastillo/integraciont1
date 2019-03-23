@@ -20,14 +20,12 @@
   <tbody>
     {%  if films %}
         {%  for film in films %}
-            {% for f in film %}
-            <tr>
-              <th scope="row">1</th>
-              <td>{{f.title }}</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            {% endfor %}
+        <tr>
+          <th scope="row">1</th>
+            <td><a href="{{ film.episode }}">{{film.title }}</a></td>
+          <td>Otto</td>
+          <td>@mdo</td>
+        </tr>
 
         {% endfor %}
     {%  endif %}

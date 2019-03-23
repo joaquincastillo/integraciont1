@@ -1,17 +1,15 @@
-from django.shortcuts import render
-from django.http import HttpResponse
-from django.template import loader
-from urllib3 import PoolManager
+from django import template
 import json
 import certifi
-url = "https://swapi.co/api/films/"
+from urllib3 import PoolManager
+
+register = template.Library()
 
 
-# Create your views here.
+@register.filter()
+def films():
+    url = "https://swapi.co/api/films/"
 
-
-def index(request):
-    #return HttpResponse("Hello, world. You're at the t1 index.")
     http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
     r = http.request('GET', url)
     print(r.status)
@@ -38,10 +36,7 @@ def index(request):
         producer = film["producer"]
         episode = film["episode_id"]
         film_dict[episode] = {"title": title, "year": year, "director": director,
-                          "producer": producer, "episode": episode}
-        context = {'films': film_dict}
-    return render(request, 'principal_page.html', context)
+                              "producer": producer, "episode": episode}
 
-
-
+    return film_dict
 

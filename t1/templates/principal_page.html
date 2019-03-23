@@ -21,12 +21,14 @@
     {%  if films %}
         {%  for film in films %}
             {% for f in film %}
-        <tr>
-          <th scope="row">1</th>
-          <td>{{f.title }}</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-        </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>{{f.title }}</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            {% endfor %}
+
         {% endfor %}
     {%  endif %}
 

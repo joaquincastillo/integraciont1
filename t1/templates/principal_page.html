@@ -15,7 +15,6 @@
         <th scope="col">Director</th>
         <th scope="col">Producers</th>
         <th scope="col">Episode</th>
-        <th scope="col">Click me</th>
     </tr>
   </thead>
   <tbody>
@@ -24,26 +23,19 @@
             {% for film in id %}
                 <tr style="text-align:center">
                     <th scope="row">{{ film.episode }}</th>
-                    <td><a href="http://www.yahoo.com">{{ film.title }}</a></td>
+                    <td><a href="{% url 't1:film_page' %}">{{ film.title }}</a></td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
                     <td>{{ film.episode }} </td>
-                    
                 </tr>
             {% endfor %}
-
         {% endfor %}
-    {%  endif %}
+    {% endif %}
+
   </tbody>
 </table>
 
 </body>
-
-<script>
-function clicked_button(button_id, url) {
-    document.getElementById(button_id).style.color = "red";
-}
-</script>
 
 </html>

@@ -18,11 +18,11 @@
     </tr>
   </thead>
   <tbody>
-    {%  if film_list %}
-        {%  for film in film_list %}
+    {%  if film_dict %}
+        {%  for key, value in film_dict.iteritems %}
         <tr>
           <th scope="row">1</th>
-            <td><{{film.title }}</td>
+            <td><{{value.title }}</td>
           <td>Otto</td>
           <td>@mdo</td>
         </tr>

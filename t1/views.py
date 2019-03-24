@@ -30,16 +30,16 @@ def index(request):
 
     # --------- Requisito NAV 1 ---------- #
     # Para la página principal
-    film_list = []
+    film_dict = {}
     for film in films["results"]:
         title = film["title"]
         year = film["release_date"]
         director = film["director"]
         producer = film["producer"]
         episode = film["episode_id"]
-        film_list.append({"title": title, "year": year, "director": director,
-                          "producer": producer, "episode": episode})
-    return render(request, 'principal_page.html', film_list)
+        film_dict[episode] = {"title": title, "year": year, "director": director,
+                          "producer": producer, "episode": episode}
+    return render(request, 'principal_page.html', film_dict)
 
 
 

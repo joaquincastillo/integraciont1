@@ -29,8 +29,8 @@
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
                     <td>{{ film.episode }} </td>
-                    <td><button type="button" id={{ film.episode }} value={{ film.url }}
-                                onclick="clicked_button({{ film.episode }})">Click me</button></td>
+                    <td><button type="button" id={{ film.episode }}
+                                onclick="clicked_button({{ film.episode, film.url }})">Click me</button></td>
                 </tr>
             {% endfor %}
 
@@ -42,7 +42,7 @@
 </body>
 
 <script>
-function clicked_button(button_id) {
+function clicked_button(button_id, url) {
     document.getElementById(button_id).style.color = "red";
 }
 </script>

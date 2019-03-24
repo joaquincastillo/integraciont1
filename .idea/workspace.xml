@@ -39,6 +39,7 @@
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/t1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/t1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../writer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../~$database.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../~$db.xlsx" beforeDir="false" />
@@ -108,11 +109,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/t1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state relative-caret-position="135">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -129,7 +130,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/templates/film/film_page.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
@@ -214,11 +215,11 @@
         <option value="$PROJECT_DIR$/t1/templetags/__init__.py" />
         <option value="$PROJECT_DIR$/t1/templetags/films.py" />
         <option value="$PROJECT_DIR$/../requests0.py" />
-        <option value="$PROJECT_DIR$/t1/urls.py" />
         <option value="$PROJECT_DIR$/t1/templates/principal_page.html" />
         <option value="$PROJECT_DIR$/t1/views.py" />
         <option value="$PROJECT_DIR$/t1/templates/film_page.html" />
         <option value="$PROJECT_DIR$/t1/templates/film/film_page.html" />
+        <option value="$PROJECT_DIR$/t1/urls.py" />
       </list>
     </option>
   </component>
@@ -257,13 +258,6 @@
               <item name="t1integracion" type="462c0819:PsiDirectoryNode" />
               <item name="t1" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="t1integracion" type="b2602c69:ProjectViewProjectNode" />
-              <item name="t1integracion" type="462c0819:PsiDirectoryNode" />
-              <item name="t1" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="film" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="t1integracion" type="b2602c69:ProjectViewProjectNode" />
@@ -388,12 +382,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553262337647</updated>
-      <workItem from="1553262354079" duration="37695000" />
+      <workItem from="1553262354079" duration="37794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37695000" />
+    <option name="totallyTimeSpent" value="37794000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="377" y="78" width="882" height="688" extended-state="0" />
@@ -537,16 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t1/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/t1/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
@@ -578,6 +562,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t1/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

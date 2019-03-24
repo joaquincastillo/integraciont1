@@ -38,6 +38,7 @@ def index(request):
         producer = film["producer"]
         episode = film["episode_id"]
         url = film["url"]
+        print(url)
         film_dict[episode] = {"title": title, "year": year, "director": director,
                           "producer": producer, "episode": episode, "url": url}
 

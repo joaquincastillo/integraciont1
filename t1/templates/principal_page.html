@@ -23,30 +23,16 @@
             <p> {{ id }} </p>
             {% for film in id %}
                 <tr>
-                    <th scope="row">1</th>
-                    <td>{{film.title }}</td>
+                    <th scope="row">{{ film.episode }}</th>
+                    <td>{{ film.title }}</td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
-                    <td>{{ film.episode }}</td>
                 </tr>
             {% endfor %}
 
         {% endfor %}
     {%  endif %}
-
-    <tr>
-      <th scope="row">2</th>
-      <td>Jacob</td>
-      <td>Thornton</td>
-      <td>@fat</td>
-    </tr>
-    <tr>
-      <th scope="row">3</th>
-      <td>Larry</td>
-      <td>the Bird</td>
-      <td>@twitter</td>
-    </tr>
   </tbody>
 </table>
 

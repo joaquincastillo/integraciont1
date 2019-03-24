@@ -44,7 +44,7 @@ def index(request):
     return render(request, 'principal_page.html', {'films': film_dict})
 
 def show_film_page(request):
-    render(request, 'film_page.html', {})
+    return render(request, 'film_page.html', {})
 
 
 

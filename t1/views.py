@@ -4,13 +4,13 @@ from django.template import loader
 from urllib3 import PoolManager
 import json
 import certifi
-url = "https://swapi.co/api/films/"
 
 
 # Create your views here.
 
 
 def index(request):
+    url = "https://swapi.co/api/films/"
     #return HttpResponse("Hello, world. You're at the t1 index.")
     http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
     r = http.request('GET', url)
@@ -38,7 +38,6 @@ def index(request):
         producer = film["producer"]
         episode = film["episode_id"]
         url = film["url"]
-        print(url)
         film_dict[episode] = {"title": title, "year": year, "director": director,
                           "producer": producer, "episode": episode, "url": url}
 

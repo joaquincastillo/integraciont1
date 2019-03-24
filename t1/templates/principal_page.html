@@ -19,7 +19,7 @@
   </thead>
   <tbody>
     {%  if films %}
-        {%  for key, value in films.iteritems %}
+        {%  for key, value in {{  films.iteritems }} %}
         <tr>
           <th scope="row">1</th>
             <td>{{value }}</td>

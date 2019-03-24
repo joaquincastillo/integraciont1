@@ -45,8 +45,7 @@ def index(request):
 
 
 def show_film_page(request, url_param):
-    url = request.GET.get('url')
-    return render(request, 'film_page.html', {"url": url})
+    return render(request, 'film_page.html', {"url": url_param})
 
 
 

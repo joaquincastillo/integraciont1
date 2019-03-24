@@ -5,8 +5,10 @@
     <title>T1 de Joaquin Castillo - SWAPI</title>
 </head>
 <body>
-{% if request %}
-    {{ request.content }}
+{% if url %}
+    {% for item in url.items %}
+        item
+    {%  endfor %}
 {% endif %}
 </body>
 </html>

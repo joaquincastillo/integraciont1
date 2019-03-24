@@ -18,11 +18,12 @@
     </tr>
   </thead>
   <tbody>
-    {%  if films %}
+    {% if films %}
         {% for id in films.items %}
+            <p> {{ id }} </p>
             {% for film in id %}
                 <tr>
-                  <th scope="row">1</th>
+                    <th scope="row">1</th>
                     <td>{{film.title }}</td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>

@@ -22,13 +22,15 @@
         {% for id in films.items %}
             <p> {{ id }} </p>
             {% for film in id %}
-                <tr>
+                <tr style="text-align:center">
                     <th scope="row">{{ film.episode }}</th>
                     <td>{{ film.title }}</td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
                     <td>{{ film.episode }}</td>
+                    <td><button id={{ film.episode }} value={{ film.url }}
+                                onclick="clicked_button({{ film.episode }})">Click me</button></td>
                 </tr>
             {% endfor %}
 
@@ -38,4 +40,11 @@
 </table>
 
 </body>
+
+<script>
+function clicked_button(button_id) {
+    document.getElementById(button_id).style.color = "red";
+}
+</script>
+
 </html>

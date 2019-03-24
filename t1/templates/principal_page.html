@@ -23,11 +23,12 @@
             <p> {{ id }} </p>
             {% for film in id %}
                 <tr>
-                    <th scope="row">{{ film.episode }}</th>
+
                     <td>{{ film.title }}</td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
+                    <td>{{ film.episode }}</td>
                 </tr>
             {% endfor %}
 

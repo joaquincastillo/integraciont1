@@ -43,7 +43,7 @@ def index(request):
 
     return render(request, 'principal_page.html', {'films': film_dict})
 
-def film_page(request):
+def show_film_page(request):
     render(request, 'film_page.html', {})
 
 

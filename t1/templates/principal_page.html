@@ -23,7 +23,7 @@
             {% for film in id %}
                 <tr style="text-align:center">
                     <th scope="row">{{ film.episode }}</th>
-                    <td><a href="{% url 'film_page' %}">{{ film.title }}</a></td>
+                    <td><a href="{% url 'show_film_page' %}">{{ film.title }}</a></td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>

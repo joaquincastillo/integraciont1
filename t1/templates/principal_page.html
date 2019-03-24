@@ -18,8 +18,8 @@
     </tr>
   </thead>
   <tbody>
-    {%  if films %}
-        {%  for film in films %}
+    {%  if film_dict %}
+        {%  for film in film_dict %}
         <tr>
           <th scope="row">1</th>
             <td><a href="{{ film.episode }}">{{film.title }}</a></td>

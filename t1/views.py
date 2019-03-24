@@ -40,7 +40,7 @@ def index(request):
         film_dict[episode] = {"title": title, "year": year, "director": director,
                           "producer": producer, "episode": episode}
     context = {'films': film_dict}
-    return render(request, 'principal_page.html', context)
+    return render(request, 'principal_page.html', film_dict)
 
 
 

@@ -20,7 +20,6 @@
   <tbody>
     {% if films %}
         {% for id in films.items %}
-            <p> {{ id }} </p>
             {% for film in id %}
                 <tr style="text-align:center">
                     <th scope="row">{{ film.episode }}</th>
@@ -29,7 +28,7 @@
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
                     <td>{{ film.episode }}</td>
-                    <td><button id={{ film.episode }} value={{ film.url }}
+                    <td><button type="button" id={{ film.episode }} value={{ film.url }}
                                 onclick="clicked_button({{ film.episode }})">Click me</button></td>
                 </tr>
             {% endfor %}

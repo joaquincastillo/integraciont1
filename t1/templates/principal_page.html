@@ -15,7 +15,7 @@
         <th scope="col">Director</th>
         <th scope="col">Producers</th>
         <th scope="col">Episode</th>
-        <th scope="col"></th>
+        <th scope="col">Click me</th>
     </tr>
   </thead>
   <tbody>
@@ -29,7 +29,8 @@
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
                     <td>{{ film.episode }} </td>
-                    <td>gggg</td>
+                    <td><button type="button" id={{ film.episode }} value={{ film.url }}
+                                onclick="clicked_button({{ film.episode }})">Click me</button></td>
                 </tr>
             {% endfor %}
 

@@ -8,4 +8,4 @@ urlpatterns = [
     path('film/<url_param>/', views.show_film_page, name='film_page')
 ]
     #path(r'film/^(?P<url_param>\S+/$', views.show_film_page, name='film_page')
-]
+

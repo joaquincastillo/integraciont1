@@ -6,10 +6,17 @@
 </head>
 <body>
 {% ifequal filter 'people' %}
-    es personas
+    <h2>Resultados de Personajes para: "{{ search }}"</h2>
+    <h3>Nº de resultados: {{ size }}</h3>
+    <ul style="list-style-type:circle;">
+    {% for s in results.items %}
+        <li><a href="/t1/character/?url_param={{ s.0 }}">{{ s.1 }}</a></li>
+    {% endfor %}
+    </ul>
 {% endifequal %}
+
 {% ifequal filter 'starships' %}
-    <h2>Resultados de Starships</h2>
+    <h2>Resultados de Starships para: "{{ search }}"</h2>
     <h3>Nº de resultados: {{ size }}</h3>
     <ul style="list-style-type:circle;">
     {% for s in results.items %}
@@ -17,18 +24,29 @@
     {% endfor %}
     </ul>
 {% endifequal %}
+
 {% ifequal filter 'planets' %}
-    es planetas
-{% endifequal %}
-{% ifequal filter 'films' %}
-    es Peliculas
+    <h2>Resultados de Planets para: "{{ search }}"</h2>
+    <h3>Nº de resultados: {{ size }}</h3>
+    <ul style="list-style-type:circle;">
+    {% for s in results.items %}
+        <li><a href="/t1/planet/?url_param={{ s.0 }}">{{ s.1 }}</a></li>
+    {% endfor %}
+    </ul>
 {% endifequal %}
 
-{% if filter and search %}
-    {{ filter }}
-    {{ search }}
-    {{ results }}
-{%  endif %}
+{% ifequal filter 'films' %}
+    <h2>Resultados de Peliculas para: "{{ search }}"</h2>
+    <h3>Nº de resultados: {{ size }}</h3>
+    <ul style="list-style-type:circle;">
+    {% for s in results.items %}
+        <li><a href="/t1/film/?url_param={{ s.0 }}">{{ s.1 }}</a></li>
+    {% endfor %}
+    </ul>
+
+{% endifequal %}
+
+
 
 </body>
 </html>

@@ -238,8 +238,28 @@ def show_search_page(request):
         acc += results["results"]
         next_req = results["next"]
 
+    results_size = len(acc)
+    deliverable = {}
+    for elem in acc:
+        n = "name"
+        if filtro=='films':
+            n = "title"
+            extra = 6
+            pos = elem["url"].find("films")
+        elif filtro=='people':
+            extra = 7
+            pos = elem["url"].find("people")
+        elif filtro=='starships':
+            extra = 10
+            pos = elem["url"].find("starships")
+        else: #if filtro=='planets':
+            extra = 8
+            pos = elem["url"].find("planets")
+        name = elem[n]
+        url_id = elem["url"][pos + extra:len(elem["url"]) - 1]
+        deliverable[url_id] = name
 
-    context = {"search": search, "filter": filtro, "results": acc}
+    context = {"search": search, "filter": filtro, "results": deliverable}
     return render(request, 'search_page.html', context)
 
 

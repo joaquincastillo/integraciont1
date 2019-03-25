@@ -8,6 +8,15 @@
 {% ifequal filter 'people' %}
     es personas
 {% endifequal %}
+{% ifequal filter 'spaceships' %}
+    es spaceships
+{% endifequal %}
+{% ifequal filter 'planets' %}
+    es planetas
+{% endifequal %}
+{% ifequal filter 'films' %}
+    es Peliculas
+{% endifequal %}
 
 {% if filter and search %}
     {{ filter }}

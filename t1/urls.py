@@ -8,7 +8,7 @@ urlpatterns = [
     path(r't1/film/', views.show_film_page, name='film_page'),
     path(r't1/film/character/', views.show_character_page, name='character_page'),
     path(r't1/film/planet/', views.show_planet_page, name='planet_page'),
-    path('t1/starship/', views.show_starship_page, name='starship_page')
+    path(r't1/starship/', views.show_starship_page, name='starship_page')
 ]
     #path('film/<url_param>/', views.show_film_page, name='film_page')
 #]

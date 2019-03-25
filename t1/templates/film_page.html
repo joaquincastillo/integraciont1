@@ -36,10 +36,11 @@
         <tr>
             <th>Personajes:</th>
 
-            <td>{%  for chr in characters %}
-                <a href="film/?url_param={{ 0 }}">{{ chr.name }}, </a>
-                {% endfor %}
-            </td>
+            {%  for chr in characters %}
+                <td>
+                {{ chr }}
+                </td>
+            {% endfor %}
         </tr>
         <tr>
             <th>Planetas:</th>

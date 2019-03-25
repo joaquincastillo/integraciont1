@@ -5,9 +5,9 @@
     <title>Title</title>
 </head>
 <body>
-{% if filter is 'people' %}
+{% ifequal filter 'people' %}
     es personas
-{% endif %}
+{% endifequal %}
 
 {% if filter and search %}
     {{ filter }}

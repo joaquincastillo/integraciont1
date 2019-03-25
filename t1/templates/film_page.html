@@ -47,6 +47,12 @@
 
     </table>
 
+    <h2> Titulo: </h2>{{ film.title }}
+    <h2> Episodio: </h2>{{ film.episode_id }}
+    <h2> Director: </h2>{{ film.director }}
+    <h2> Productor(es): </h2>{{ film.producer }}
+    <h2> Fecha lanzamiento: </h2>{{ film.release_date }}
+
     <h2>Personajes</h2>
     <ul style="list-style-type:circle;">
     {% for c in characters.items %}

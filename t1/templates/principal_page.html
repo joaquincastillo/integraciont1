@@ -8,12 +8,12 @@
 <body>
     <div class="topnav">
         <form id="searchForm">
-            <input type="radio" name="gender" value="films" checked> Peliculas
-            <input type="radio" name="gender" value="people"> Personajes
-            <input type="radio" name="gender" value="starships"> Starships
-            <input type="radio" name="gender" value="planets"> Planetas
+            <input id="films" type="radio" name="gender" value="films" checked> Peliculas
+            <input id="people" type="radio" name="gender" value="people"> Personajes
+            <input id="starships" type="radio" name="gender" value="starships"> Starships
+            <input id="planets" type="radio" name="gender" value="planets"> Planetas
             <input type="text" placeholder="Search..">
-            <input type="submit" value="Buscar">
+            <input type="submit" value="Buscar" onclick="myFunction(value)">
         </form>
     </div>
     <div></div>
@@ -53,10 +53,10 @@
 
 
 <script>
-document.getElementById("searchForm").addEventListener("submit", myFunction);
+//document.getElementById("searchForm").addEventListener("submit", myFunction);
 
-function myFunction() {
-  alert("The form was submitted");
+function myFunction(value) {
+  alert("The form was submitted. Value="+value);
 }
 </script>
 

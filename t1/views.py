@@ -122,7 +122,7 @@ def show_character_page(request):
         film_req = http.request('GET', film_url)
         film_json = film_req.data.decode('utf8')
         film = json.loads(film_json)
-        film_name = film["name"]
+        film_name = film["title"]
         f_url = film["url"]
         pos = f_url.find("films")
         url_id = film["url"][pos + 6:len(film["url"]) - 1]

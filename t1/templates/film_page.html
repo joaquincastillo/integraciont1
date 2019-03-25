@@ -5,7 +5,7 @@
     <title>T1 de Joaquin Castillo - SWAPI ulala</title>
 </head>
 <body>
-{% if film %}
+{% if film and characters %}
 
 
     <table style="width:100%">
@@ -15,7 +15,7 @@
         </tr>
         <tr>
           <th>Episode:</th>
-          <td>{{ film.episode }}</td>
+          <td>{{ film.episode_id }}</td>
         </tr>
         <tr>
           <th>Director:</th>
@@ -35,7 +35,11 @@
         </tr>
         <tr>
             <th>Personajes:</th>
-            <td>{{ film.characters }}</td>
+
+            <td>{%  for chr in characters %}
+                <a href="film/?url_param={{ 0 }}">{{ chr.name }}, </a>
+                {% endfor %}
+            </td>
         </tr>
         <tr>
             <th>Planetas:</th>

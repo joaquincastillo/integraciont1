@@ -56,8 +56,20 @@ def show_film_page(request):
     r = http.request('GET', req_url)
     my_json = r.data.decode('utf8')
     film = json.loads(my_json)
+    characters = {}
+    for character_url in film["characters"]:
+        char_req = http.request('GET', character_url)
+        char_json = char_req.decode('utf8')
+        character = json.loads(char_json)
+        char_name = character["name"]
+        char_url = character["url"]
+        pos = char_url.find("people")
+        url_id = character["url"][pos+7:len(character["url"])-1]
+        characters[url_id] = char_name
 
-    return render(request, 'film_page.html', {"film": film})
+
+
+    return render(request, 'film_page.html', {"film": film, "characters": characters})
 
 
 

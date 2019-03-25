@@ -25,7 +25,7 @@
                     <th scope="row">{{ film.episode }}</th>
 
 
-                    <td content={{ film.url }}><a href="{% url 'film_page' url_param="https://swapi.co/api/films/1" %}">{{ film.title }}</a></td>
+                    <td content={{ film.small_url }}><a href="{% url 'film_page' url_param=content %}">{{ film.title }}</a></td>
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>

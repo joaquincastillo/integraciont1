@@ -7,6 +7,7 @@
 <body>
 {% if starship %}
     <h2>Starship Info: {{ starship.name }}</h2>
+    <table>
     <tr>
         <th>Nombre:</th>
         <td>{{ starship.name }}</td>
@@ -67,6 +68,7 @@
         <th>Peliculas:</th>
         <td>{{ starship.films }}</td>
     </tr>
+    </table>
 {% endif %}
 
 </body>

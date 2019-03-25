@@ -39,7 +39,6 @@
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t1/templates/starship_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/t1/templates/starship_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../writer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../~$database.xlsx" beforeDir="false" />
@@ -98,7 +97,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="194">
               <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
               <folding>
                 <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -134,8 +133,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/templates/film_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="30" column="13" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="13" />
+            <state relative-caret-position="205">
+              <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="12" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -158,8 +157,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/t1/templates/starship_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+            <state relative-caret-position="278">
+              <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -396,12 +395,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553262337647</updated>
-      <workItem from="1553262354079" duration="55718000" />
+      <workItem from="1553262354079" duration="55835000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55718000" />
+    <option name="totallyTimeSpent" value="55835000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="354" y="43" width="882" height="688" extended-state="0" />
@@ -538,16 +537,6 @@
     <entry file="file://$PROJECT_DIR$/t1/templates/character/character_page.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/t1integracion/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/t1/templates/film/film_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -582,16 +571,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/t1/templates/planet_page.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -599,10 +578,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/t1integracion/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="16" column="37" lean-forward="true" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+          <folding>
+            <element signature="e#637#669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/t1/templates/film_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="30" column="13" lean-forward="true" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="13" />
+        <state relative-caret-position="205">
+          <caret line="32" column="4" lean-forward="true" selection-start-line="32" selection-start-column="4" selection-end-line="32" selection-end-column="12" />
           <folding>
             <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#ul#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -614,8 +613,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/templates/starship_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="67" column="29" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+        <state relative-caret-position="278">
+          <caret line="70" column="12" selection-start-line="70" selection-start-column="12" selection-end-line="70" selection-end-column="12" />
         </state>
       </provider>
     </entry>

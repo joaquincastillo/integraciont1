@@ -78,7 +78,7 @@ def show_film_page(request):
         ship_name = ship["name"]
         s_url = ship["url"]
         pos = s_url.find("starships")
-        url_id = ship["url"][pos + 9:len(ship["url"]) - 1]
+        url_id = ship["url"][pos + 10:len(ship["url"]) - 1]
         starships[url_id] = ship_name
 
     # Obteniendo info de los planetas
@@ -109,7 +109,7 @@ def show_character_page(request):
 
 def show_planet_page(request):
     url_param = request.GET.get("url_param")
-    req_url = "https://swapi.co/api/planet/{}".format(url_param)
+    req_url = "https://swapi.co/api/planets/{}".format(url_param)
     http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
     r = http.request('GET', req_url)
     my_json = r.data.decode('utf8')

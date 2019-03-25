@@ -14,10 +14,10 @@
             <input id="planets" type="radio" name="filter" value="planets"> Planetas
             <input type="text" placeholder="Search..">
             <input type="submit" value="Buscar"
-                   onclick="myFunction(document.getElementById('films'),
-                   document.getElementById('people'),
-                   document.getElementById('starships'),
-                   document.getElementById('planets'),)">
+                   onclick="myFunction(document.getElementById('films').checked,
+                   document.getElementById('people').checked,
+                   document.getElementById('starships').checked,
+                   document.getElementById('planets').checked,)">
         </form>
     </div>
     <div></div>
@@ -59,7 +59,7 @@
 //document.getElementById("searchForm").addEventListener("submit", myFunction);
 
 function myFunction(f, p, s, pl) {
-    let value = f.checked;
+    let value = f;
     alert("The form was submitted. Value="+value);
 }
 </script>

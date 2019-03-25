@@ -220,8 +220,9 @@ def show_starship_page(request):
                                                   "films": films})
 
 def show_search_page(request):
-    data = request.GET.get("search")
-    context = {"data": data}
+    search = request.GET.get("search")
+    filtro = request.GET.get("filter")
+    context = {"search": search, "filter":filtro}
     return render(request, 'search_page.html', context)
 
 

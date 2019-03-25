@@ -53,6 +53,20 @@
         <td>{{ planet.films }}</td>
     </tr>
     </table>
+
+    <h2>Peliculas</h2>
+    <ul style="list-style-type:circle;">
+    {% for f in films.items %}
+        <li><a href="/t1/film/?url_param={{ f.0 }}">{{ f.1 }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h2>Residentes</h2>
+    <ul style="list-style-type:circle;">
+    {% for r in residents.items %}
+        <li><a href="/t1/people/?url_param={{ r.0 }}">{{ r.1 }}</a></li>
+    {% endfor %}
+    </ul>
 {% endif %}
 
 </body>

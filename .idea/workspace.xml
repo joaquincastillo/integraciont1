@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f56d54d1-a9dc-441a-a8f8-f180009c8c00" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/t1/templates/planet_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tarea4/.idea/Tarea4.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tarea4/.idea/misc.xml" beforeDir="false" />
@@ -40,9 +39,6 @@
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t1/templates/film_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/t1/templates/film_page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/t1/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/t1/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/t1/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../writer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../~$database.xlsx" beforeDir="false" />
@@ -80,8 +76,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/t1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="205">
-              <caret line="125" column="35" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+            <state relative-caret-position="158">
+              <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -399,12 +395,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553262337647</updated>
-      <workItem from="1553262354079" duration="54607000" />
+      <workItem from="1553262354079" duration="54702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54607000" />
+    <option name="totallyTimeSpent" value="54702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="354" y="43" width="882" height="688" extended-state="0" />
@@ -614,8 +610,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="125" column="35" lean-forward="true" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+        <state relative-caret-position="158">
+          <caret line="80" column="36" selection-start-line="80" selection-start-column="36" selection-end-line="80" selection-end-column="36" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>

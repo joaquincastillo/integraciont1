@@ -77,8 +77,8 @@ def show_film_page(request):
         ship = json.loads(ship_json)
         ship_name = ship["name"]
         s_url = ship["url"]
-        pos = s_url.find("people")
-        url_id = ship["url"][pos + 10:len(ship["url"]) - 1]
+        pos = s_url.find("starships")
+        url_id = ship["url"][pos + 9:len(ship["url"]) - 1]
         starships[url_id] = ship_name
 
     # Obteniendo info de los planetas

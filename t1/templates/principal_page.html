@@ -13,7 +13,7 @@
             <input id="starships" type="radio" name="filter" value="starships"> Starships
             <input id="planets" type="radio" name="filter" value="planets"> Planetas
             <input id="search" type="text" placeholder="Search..">
-            <input type="submit" value=""
+            <input type="submit" value="Buscar"
                    onclick="myFunction(document.getElementById('films').checked,
                    document.getElementById('people').checked,
                    document.getElementById('starships').checked,
@@ -60,7 +60,19 @@
 //document.getElementById("searchForm").addEventListener("submit", myFunction);
 
 function myFunction(f, p, s, pl, search_item) {
-    alert("The form was submitted. Value="+f+". search= "+search_item);
+    if (f){
+        alert("The form was submitted. Value="+"PELICULAS"+". search= "+search_item);
+    }
+    else if (p){
+        alert("The form was submitted. Value="+"PEOPLE"+". search= "+search_item);
+
+    }
+    else if (s){
+        alert("The form was submitted. Value="+"STARSHIPS"+". search= "+search_item);
+    }
+    else if (pl){
+        alert("The form was submitted. Value="+"PLANETS"+". search= "+search_item);
+    }
 
 }
 </script>

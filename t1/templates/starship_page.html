@@ -69,6 +69,20 @@
         <td>{{ starship.films }}</td>
     </tr>
     </table>
+
+    <h2>Pilotos</h2>
+    <ul style="list-style-type:circle;">
+    {% for p in pilots.items %}
+        <li><a href="/t1/character/?url_param={{ p.0 }}">{{ p.1 }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h2>Peliculas</h2>
+    <ul style="list-style-type:circle;">
+    {% for f in films.items %}
+        <li><a href="/t1/film/?url_param={{ f.0 }}">{{ f.1 }}</a></li>
+    {% endfor %}
+    </ul>
 {% endif %}
 
 </body>

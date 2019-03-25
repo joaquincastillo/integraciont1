@@ -230,7 +230,12 @@ def show_search_page(request):
     results = json.loads(my_json)
     acc += results["results"]
 
-    
+    while results["next"] != "None":
+        next_req = results["next"]
+        res = http.request('GET', next_req)
+        res_json = res.data.decode('utf8')
+        results = json.loads(res_json)
+        acc += results["results"]
 
 
     context = {"search": search, "filter": filtro, "results": acc}

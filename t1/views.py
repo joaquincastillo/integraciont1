@@ -96,6 +96,16 @@ def show_film_page(request):
     return render(request, 'film_page.html', {"film": film, "characters": characters,
                                               "starships": starships, "planets": planets})
 
+def show_character_page(request):
+    url_param = request.GET.get("url_param")
+    req_url = "https://swapi.co/api/people/{}".format(url_param)
+    http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
+    r = http.request('GET', req_url)
+    my_json = r.data.decode('utf8')
+    character = json.loads(my_json)
+
+    render(request, 'character_page.html', {"character": character})
+
 
 
 

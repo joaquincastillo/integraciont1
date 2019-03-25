@@ -58,7 +58,7 @@
 
     <ul style="list-style-type:circle;">
     {% for c in characters.items %}
-      <li>{{ c.1 }}</li>
+        <li><a href="character/?url_param={{ c.0 }}">{{ c.1 }}</a></li>
     {% endfor %}
     </ul>
 

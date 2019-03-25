@@ -6,7 +6,53 @@
 </head>
 <body>
 {% if planet %}
-    {{ planet }}
+    <h2>Planet Info: {{ planet.name }}</h2>
+    <table>
+    <tr>
+        <th>Nombre:</th>
+        <td>{{ planet.name }}</td>
+    </tr>
+    <tr>
+        <th>Diametro:</th>
+        <td>{{ planet.diameter }}</td>
+    </tr>
+    <tr>
+        <th>Periodo de rotacion:</th>
+        <td>{{ planet.rotation_period }}</td>
+    </tr>
+    <tr>
+        <th>Vuelta a su estrella:</th>
+        <td>{{ planet.orbital_period }}</td>
+    </tr>
+    <tr>
+        <th>Gravedad:</th>
+        <td>{{ planet.gravity }}</td>
+    </tr>
+    <tr>
+        <th>Poblacion:</th>
+        <td>{{ planet.population }}</td>
+    </tr>
+    <tr>
+        <th>Clima:</th>
+        <td>{{ planet.climate }}</td>
+    </tr>
+    <tr>
+        <th>Geografia:</th>
+        <td>{{ planet.terrain }}</td>
+    </tr>
+    <tr>
+        <th>Superficie de agua :</th>
+        <td>{{ planet.surface_water }}</td>
+    </tr>
+    <tr>
+        <th>Residentes:</th>
+        <td>{{ planet.residents }}</td>
+    </tr>
+    <tr>
+        <th>Peliculas:</th>
+        <td>{{ planet.films }}</td>
+    </tr>
+    </table>
 {% endif %}
 
 </body>

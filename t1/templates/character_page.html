@@ -6,7 +6,53 @@
 </head>
 <body>
 {% if character %}
-    {{ character }}
+    <h2>Character Info: {{ character.name }}</h2>
+    <table>
+    <tr>
+        <th>Nombre:</th>
+        <td>{{ character.name }}</td>
+    </tr>
+    <tr>
+        <th>Año nacimiento:</th>
+        <td>{{ character.birth_year }}</td>
+    </tr>
+    <tr>
+        <th>Color de ojos:</th>
+        <td>{{ character.eye_color }}</td>
+    </tr>
+    <tr>
+        <th>Genero:</th>
+        <td>{{ character.gender }}</td>
+    </tr>
+    <tr>
+        <th>Color de pelo:</th>
+        <td>{{ character.hair_color }}</td>
+    </tr>
+    <tr>
+        <th>Altura:</th>
+        <td>{{ character.height }}</td>
+    </tr>
+    <tr>
+        <th>Peso:</th>
+        <td>{{ character.mass }}</td>
+    </tr>
+    <tr>
+        <th>Color de piel:</th>
+        <td>{{ character.skin_color }}</td>
+    </tr>
+    <tr>
+        <th>Planeta de nacimiento:</th>
+        <td>{{ character.home_world }}</td>
+    </tr>
+    <tr>
+        <th>Peliculas:</th>
+        <td>{{ character.films }}</td>
+    </tr>
+    <tr>
+        <th>Starships:</th>
+        <td>{{ character.starships }}</td>
+    </tr>
+    </table>
 {% endif %}
 
 </body>

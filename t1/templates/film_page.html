@@ -55,6 +55,13 @@
             {% endfor %}
         </tr>
     </table>
+
+    <ul style="list-style-type:circle;">
+    {% for c in characters %}
+      <li>{{ c.1 }}</li>
+    {% endfor %}
+    </ul>
+
 {% endif %}
 
 </body>

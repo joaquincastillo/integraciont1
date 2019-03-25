@@ -104,7 +104,46 @@ def show_character_page(request):
     my_json = r.data.decode('utf8')
     character = json.loads(my_json)
 
-    return render(request, 'character_page.html', {"character": character})
+    # Buscando su planeta de nacimiento
+    homeworld_d = {}
+    homeworld_url = character["homeworld"]
+    homeworld_req = http.request('GET', homeworld_url)
+    homeworld_json = homeworld_req.data.decode('utf8')
+    homeworld = json.loads(homeworld_json)
+    homeworld_name = homeworld["name"]
+    h_url = homeworld["url"]
+    pos = h_url.find("planets")
+    url_id = homeworld["url"][pos + 8: len(homeworld["url"]) - 1]
+    homeworld_d[url_id] = homeworld_name
+
+    #Buscando las peliculas donde apareció
+    films = {}
+    for film_url in character["films"]:
+        film_req = http.request('GET', film_url)
+        film_json = film_req.data.decode('utf8')
+        film = json.loads(film_json)
+        film_name = film["name"]
+        f_url = film["url"]
+        pos = f_url.find("films")
+        url_id = film["url"][pos + 7:len(film["url"]) - 1]
+        films[url_id] = film_name
+
+    #Buscando las starships que piloteo
+    starships = {}
+    for starship_url in character["starships"]:
+        starship_req = http.request('GET', starship_url)
+        starship_json = starship_req.data.decode('utf8')
+        starship = json.loads(starship_json)
+        starship_name = starship["name"]
+        s_url = starship["url"]
+        pos = s_url.find("starships")
+        url_id = starship["url"][pos + 10:len(starship["url"]) - 1]
+        starships[url_id] = starship_name
+
+    return render(request, 'character_page.html', {"character": character,
+                                                   "homeworld": homeworld_d,
+                                                   "films": films,
+                                                   "starships": starships})
 
 
 def show_planet_page(request):

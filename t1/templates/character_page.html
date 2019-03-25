@@ -53,6 +53,28 @@
         <td>{{ character.starships }}</td>
     </tr>
     </table>
+
+    <h2>Planeta de nacimiento</h2>
+    <ul style="list-style-type:circle;">
+    {% for h in homeworld.items %}
+        <li><a href="/t1/planet/?url_param={{ h.0 }}">{{ h.1 }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h2>Peliculas</h2>
+    <ul style="list-style-type:circle;">
+    {% for f in films.items %}
+        <li><a href="/t1/film/?url_param={{ f.0 }}">{{ f.1 }}</a></li>
+    {% endfor %}
+    </ul>
+
+    <h2>Starships</h2>
+    <ul style="list-style-type:circle;">
+    {% for s in starships.items %}
+        <li><a href="/t1/starship/?url_param={{ s.0 }}">{{ s.1 }}</a></li>
+    {% endfor %}
+    </ul>
+
 {% endif %}
 
 </body>

@@ -56,6 +56,7 @@ def show_film_page(request):
     r = http.request('GET', req_url)
     my_json = r.data.decode('utf8')
     film = json.loads(my_json)
+    film["year2"] = film["release_date"][:4]
 
     # Obteniendo info de los personajes
     characters = {}

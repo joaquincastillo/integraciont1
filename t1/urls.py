@@ -6,7 +6,7 @@ from . import views
 urlpatterns = [
     path('t1/', views.index, name='index'),
     path(r't1/film/', views.show_film_page, name='film_page'),
-    path(r't1/character/', views.show_character_page, name='character_page')
+    path(r't1/film/character/', views.show_character_page, name='character_page')
 ]
     #path('film/<url_param>/', views.show_film_page, name='film_page')
 #]

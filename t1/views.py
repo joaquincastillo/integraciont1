@@ -231,7 +231,7 @@ def show_search_page(request):
     acc += results["results"]
     next_req = results["next"]
 
-    while next_req is not None:
+    while next_req is not None:  # This almost destroyed me
         res = http.request('GET', next_req)
         res_json = res.data.decode('utf8')
         results = json.loads(res_json)

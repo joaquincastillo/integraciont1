@@ -7,14 +7,14 @@
 
 <body>
     <div class="topnav">
-        <a class="active" href="#home">Home</a>
-        <select title="Filter">
-            <option value="films">Peliculas</option>
-            <option value="people">Personajes</option>
-            <option value="starships">Starships</option>
-            <option value="planets">Planetas</option>
-        </select>
-        <input type="text" placeholder="Search..">
+        <form id="searchForm">
+            <input type="radio" name="gender" value="films" checked> Peliculas<br>
+            <input type="radio" name="gender" value="people"> Personajes<br>
+            <input type="radio" name="gender" value="starships"> Starships
+            <input type="radio" name="gender" value="planets"> Planetas
+            <input type="text" placeholder="Buscar..">
+            <input type="submit" value="Submit">
+        </form>
     </div>
     <div></div>
     <table class="table table-dark">
@@ -50,6 +50,15 @@
 
   </tbody>
 </table>
+
+
+<script>
+document.getElementById("searchForm").addEventListener("submit", myFunction);
+
+function myFunction() {
+  alert("The form was submitted");
+}
+</script>
 
 </body>
 

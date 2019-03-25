@@ -118,15 +118,15 @@ def show_character_page(request):
 
     #Buscando las peliculas donde apareció
     films = {}
-    for film_url in character["films"]:
-        film_req = http.request('GET', film_url)
-        film_json = film_req.data.decode('utf8')
-        film = json.loads(film_json)
-        film_name = film["name"]
-        f_url = film["url"]
-        pos = f_url.find("films")
-        url_id = film["url"][pos + 6:len(film["url"]) - 1]
-        films[url_id] = film_name
+    #for film_url in character["films"]:
+    #    film_req = http.request('GET', film_url)
+    #    film_json = film_req.data.decode('utf8')
+    #    film = json.loads(film_json)
+    #    film_name = film["name"]
+    #   f_url = film["url"]
+    #   pos = f_url.find("films")
+    #   url_id = film["url"][pos + 6:len(film["url"]) - 1]
+    #   films[url_id] = film_name
 
     #Buscando las starships que piloteo
     starships = {}

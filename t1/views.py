@@ -229,9 +229,9 @@ def show_search_page(request):
     my_json = r.data.decode('utf8')
     results = json.loads(my_json)
     acc += results["results"]
-    next = results["next"]
+    next_req = results["next"]
 
-    while results["next"] not in ["None", "null"]:
+    while next_req != "None":
         next_req = results["next"]
         res = http.request('GET', next_req)
         res_json = res.data.decode('utf8')

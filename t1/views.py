@@ -107,6 +107,27 @@ def show_character_page(request):
     return render(request, 'character_page.html', {"character": character})
 
 
+def show_planet_page(request):
+    url_param = request.GET.get("url_param")
+    req_url = "https://swapi.co/api/planet/{}".format(url_param)
+    http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
+    r = http.request('GET', req_url)
+    my_json = r.data.decode('utf8')
+    planet = json.loads(my_json)
+
+    return render(request, 'character_page.html', {"planet": planet})
+
+
+def show_starship_page(request):
+    url_param = request.GET.get("url_param")
+    req_url = "https://swapi.co/api/starships/{}".format(url_param)
+    http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
+    r = http.request('GET', req_url)
+    my_json = r.data.decode('utf8')
+    starship = json.loads(my_json)
+
+    return render(request, 'character_page.html', {"starship": starship})
+
 
 
 

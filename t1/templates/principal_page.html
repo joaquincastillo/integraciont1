@@ -6,16 +6,27 @@
 </head>
 
 <body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <select title="Filter">
+            <option value="films">Peliculas</option>
+            <option value="people">Personajes</option>
+            <option value="starships">Starships</option>
+            <option value="planets">Planetas</option>
+        </select>
+        <input type="text" placeholder="Search..">
+    </div>
+    <div></div>
     <table class="table table-dark">
-  <thead>
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Year</th>
-        <th scope="col">Director</th>
-        <th scope="col">Producers</th>
-        <th scope="col">Episode</th>
-    </tr>
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Year</th>
+            <th scope="col">Director</th>
+            <th scope="col">Producers</th>
+            <th scope="col">Episode</th>
+        </tr>
   </thead>
   <tbody>
     {% if films %}

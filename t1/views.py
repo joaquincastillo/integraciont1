@@ -166,18 +166,17 @@ def show_planet_page(request):
         url_id = film["url"][pos + 6:len(film["url"]) - 1]
         films[url_id] = film_name
 
-        # Buscando sus pilotos
-        residents = {}
-        for people_url in planet["residents"]:
-            people_req = http.request('GET', people_url)
-            people_json = people_req.data.decode('utf8')
-            people = json.loads(people_json)
-            people_name = people["name"]
-            p_url = people["url"]
-            pos = p_url.find("people")
-            url_id = people["url"][pos + 7:len(people["url"]) - 1]
-            residents[url_id] = people_name
-
+    # Buscando sus pilotos
+    residents = {}
+    for people_url in planet["residents"]:
+        people_req = http.request('GET', people_url)
+        people_json = people_req.data.decode('utf8')
+        people = json.loads(people_json)
+        people_name = people["name"]
+        p_url = people["url"]
+        pos = p_url.find("people")
+        url_id = people["url"][pos + 7:len(people["url"]) - 1]
+        residents[url_id] = people_name
 
     return render(request, 'planet_page.html', {"planet": planet,
                                                 "films": films,

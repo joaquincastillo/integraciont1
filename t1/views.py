@@ -42,7 +42,7 @@ def index(request):
         small_url = url[pos+6:len(url)-1]
         film_dict[episode] = {"title": title, "year": year, "director": director,
                               "producer": producer, "episode": episode, "url": url,
-                              "small": small_url}
+                              "small_url": small_url}
 
     return render(request, 'principal_page.html', {'films': film_dict})
 

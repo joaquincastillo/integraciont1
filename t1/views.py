@@ -115,7 +115,7 @@ def show_planet_page(request):
     my_json = r.data.decode('utf8')
     planet = json.loads(my_json)
 
-    return render(request, 'character_page.html', {"planet": planet})
+    return render(request, 'planet_page.html', {"planet": planet})
 
 
 def show_starship_page(request):
@@ -126,7 +126,7 @@ def show_starship_page(request):
     my_json = r.data.decode('utf8')
     starship = json.loads(my_json)
 
-    return render(request, 'character_page.html', {"starship": starship})
+    return render(request, 'starship_page.html', {"starship": starship})
 
 
 

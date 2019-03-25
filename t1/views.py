@@ -81,8 +81,20 @@ def show_film_page(request):
         url_id = ship["url"][pos + 10:len(ship["url"]) - 1]
         starships[url_id] = ship_name
 
+    # Obteniendo info de los planetas
+    planets = {}
+    for planet_url in film["planets"]:
+        planet_req = http.request('GET', planet_url)
+        planet_json = planet_req.data.decode('utf8')
+        planet = json.loads(planet_json)
+        planet_name = planet["name"]
+        p_url = planet["url"]
+        pos = p_url.find("planets")
+        url_id = ship["url"][pos + 8:len(ship["url"]) - 1]
+        planets[url_id] = planet_name
+
     return render(request, 'film_page.html', {"film": film, "characters": characters,
-                                              "starships": starships})
+                                              "starships": starships, "planets": planets})
 
 
 

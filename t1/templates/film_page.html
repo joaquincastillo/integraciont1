@@ -5,7 +5,7 @@
     <title>T1 de Joaquin Castillo - SWAPI ulala</title>
 </head>
 <body>
-{% if film and characters and starships%}
+{% if film and characters and starships and planets %}
 
 
     <table style="width:100%">
@@ -23,7 +23,7 @@
         </tr>
         <tr>
             <th>Productor(es):</th>
-            <td>{{ film.producers }}</td>
+            <td>{{ film.producer }}</td>
         </tr>
         <tr>
             <th>Fecha de lanzamiento:</th>
@@ -48,7 +48,11 @@
         </tr>
         <tr>
             <th>Planetas:</th>
-            <td>{{ film.planets }}</td>
+            {% for planet in planets.items %}
+                <td>
+                {{  planet.1 }}
+                </td>
+            {% endfor %}
         </tr>
     </table>
 {% endif %}

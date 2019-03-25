@@ -49,7 +49,15 @@ def index(request):
 
 def show_film_page(request):
     url_param = request.GET.get("url_param")
-    return render(request, 'film_page.html', {"url": url_param})
+    req_url = "https://swapi.co/api/films/{}".format(url_param)
+
+    # return HttpResponse("Hello, world. You're at the t1 index.")
+    http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
+    r = http.request('GET', req_url)
+    my_json = r.data.decode('utf8')
+    film = json.loads(my_json)
+
+    return render(request, 'film_page.html', {"film": film})
 
 
 

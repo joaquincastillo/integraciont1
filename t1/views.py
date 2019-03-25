@@ -232,11 +232,11 @@ def show_search_page(request):
     next_req = results["next"]
 
     while next_req != "None":
-        next_req = results["next"]
         res = http.request('GET', next_req)
         res_json = res.data.decode('utf8')
         results = json.loads(res_json)
         acc += results["results"]
+        next_req = results["next"]
 
 
     context = {"search": search, "filter": filtro, "results": acc}

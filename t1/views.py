@@ -219,6 +219,10 @@ def show_starship_page(request):
                                                   "pilots": pilots,
                                                   "films": films})
 
+def show_search_page(request):
+    data = request.GET.get("search")
+    context = {"data": data}
+    return render(request, 'search_page.html', context)
 
 
 

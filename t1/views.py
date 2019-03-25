@@ -65,7 +65,7 @@ def show_film_page(request):
         char_url = character["url"]
         pos = char_url.find("people")
         url_id = character["url"][pos+7:len(character["url"])-1]
-        characters[url_id] = char_name
+        characters[char_name] = url_id
 
 
 

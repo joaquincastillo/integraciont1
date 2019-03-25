@@ -36,12 +36,10 @@
         <tr>
             <th>Personajes:</th>
 
-            {% for id in characters.items %}
-            {% for chr in id %}
+            {% for char in characters.items %}
                 <td>
-                {{ chr}}
+                {{ char}}
                 </td>
-            {% endfor %}
             {% endfor %}
         </tr>
         <tr>

@@ -7,14 +7,14 @@
 
 <body>
     <div class="topnav">
-        <form id="searchForm" method="get">
+        <form method="GET" action= {% url "/t1/character/?url_param=document.getElementById('search').value" %}>{{ c.1 }}"  %}id="searchForm" method="get">
             <input id="films" type="radio" name="filter" value="films" checked> Peliculas
             <input id="people" type="radio" name="filter" value="people"> Personajes
             <input id="starships" type="radio" name="filter" value="starships"> Starships
             <input id="planets" type="radio" name="filter" value="planets"> Planetas
             <input id="search" type="text" placeholder="Search..">
             <input type="submit" value="Buscar"
-                   onclick="myFunction(document.getElementById('films').checked,
+                   onclick="myFunction2(document.getElementById('films').checked,
                    document.getElementById('people').checked,
                    document.getElementById('starships').checked,
                    document.getElementById('planets').checked,
@@ -58,6 +58,10 @@
 
 <script>
 //document.getElementById("searchForm").addEventListener("submit", myFunction);
+
+function  myFunction2(f, p, s, pl, search_item) {
+
+}
 
 function myFunction(f, p, s, pl, search_item) {
     if (f){

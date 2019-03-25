@@ -76,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="272">
+              <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -100,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="27" column="108" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
+            <state relative-caret-position="198">
+              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -112,8 +112,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
               </folding>
@@ -389,12 +389,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553262337647</updated>
-      <workItem from="1553262354079" duration="43847000" />
+      <workItem from="1553262354079" duration="45208000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43847000" />
+    <option name="totallyTimeSpent" value="45208000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="377" y="78" width="882" height="688" extended-state="0" />
@@ -554,8 +554,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
           </folding>
@@ -564,8 +564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="272">
+          <caret line="49" column="39" lean-forward="true" selection-start-line="49" selection-start-column="39" selection-end-line="49" selection-end-column="39" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -574,8 +574,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="27" column="108" selection-start-line="27" selection-start-column="108" selection-end-line="27" selection-end-column="108" />
+        <state relative-caret-position="198">
+          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
           <folding>
             <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

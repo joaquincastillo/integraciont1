@@ -125,7 +125,7 @@ def show_character_page(request):
         film_name = film["name"]
         f_url = film["url"]
         pos = f_url.find("films")
-        url_id = film["url"][pos + 7:len(film["url"]) - 1]
+        url_id = film["url"][pos + 6:len(film["url"]) - 1]
         films[url_id] = film_name
 
     #Buscando las starships que piloteo

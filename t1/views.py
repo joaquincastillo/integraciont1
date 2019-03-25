@@ -104,7 +104,7 @@ def show_character_page(request):
     my_json = r.data.decode('utf8')
     character = json.loads(my_json)
 
-    render(request, 'character_page.html', {"character": character})
+    return render(request, 'character_page.html', {"character": character})
 
 
 

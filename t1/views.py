@@ -222,7 +222,14 @@ def show_starship_page(request):
 def show_search_page(request):
     search = request.GET.get("search")
     filtro = request.GET.get("filter")
-    context = {"search": search, "filter":filtro}
+    req_url = "https://swapi.co/api/{}/?search={}".format(filtro, search)
+    http = PoolManager(cert_reqs="CERT_REQUIRED", ca_certs=certifi.where())
+    r = http.request('GET', req_url)
+    my_json = r.data.decode('utf8')
+    results = json.loads(my_json)
+
+
+    context = {"search": search, "filter": filtro, "results": results}
     return render(request, 'search_page.html', context)
 
 

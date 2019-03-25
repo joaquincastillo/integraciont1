@@ -9,7 +9,13 @@
     es personas
 {% endifequal %}
 {% ifequal filter 'spaceships' %}
-    es spaceships
+    <h2>Resultados de Starships</h2>
+    <h3>Nº de resultados: {{ size }}</h3>
+    <ul style="list-style-type:circle;">
+    {% for s in starships.items %}
+        <li><a href="/t1/starship/?url_param={{ s.0 }}">{{ s.1 }}</a></li>
+    {% endfor %}
+    </ul>
 {% endifequal %}
 {% ifequal filter 'planets' %}
     es planetas

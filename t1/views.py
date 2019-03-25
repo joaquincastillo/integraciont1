@@ -259,7 +259,7 @@ def show_search_page(request):
         url_id = elem["url"][pos + extra:len(elem["url"]) - 1]
         deliverable[url_id] = name
 
-    context = {"search": search, "filter": filtro, "results": deliverable}
+    context = {"search": search, "filter": filtro, "results": deliverable, "size": results_size}
     return render(request, 'search_page.html', context)
 
 

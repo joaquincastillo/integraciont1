@@ -13,7 +13,11 @@
             <input id="starships" type="radio" name="filter" value="starships"> Starships
             <input id="planets" type="radio" name="filter" value="planets"> Planetas
             <input type="text" placeholder="Search..">
-            <input type="submit" value="Buscar" onclick="myFunction()">
+            <input type="submit" value="Buscar"
+                   onclick="myFunction(document.getElementById('films'),
+                   document.getElementById('people'),
+                   document.getElementById('starships'),
+                   document.getElementById('planets'),)">
         </form>
     </div>
     <div></div>
@@ -40,8 +44,7 @@
                     <td>{{ film.year }}</td>
                     <td>{{ film.director }}</td>
                     <td>{{ film.producer }}</td>
-                    <td>{{ film.url }} </td>
-                    <td>{{ film.small_url }}</td>
+                    <td>{{ film.episode }} </td>
 
                 </tr>
             {% endfor %}
@@ -55,7 +58,8 @@
 <script>
 //document.getElementById("searchForm").addEventListener("submit", myFunction);
 
-function myFunction(value) {
+function myFunction(f, p, s, pl) {
+    let value = f.valueOf();
   alert("The form was submitted. Value="+value);
 }
 </script>

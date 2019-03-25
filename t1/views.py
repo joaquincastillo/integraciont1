@@ -166,7 +166,7 @@ def show_planet_page(request):
         url_id = film["url"][pos + 6:len(film["url"]) - 1]
         films[url_id] = film_name
 
-    # Buscando sus pilotos
+    # Buscando sus residentes
     residents = {}
     for people_url in planet["residents"]:
         people_req = http.request('GET', people_url)

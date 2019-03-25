@@ -59,7 +59,7 @@ def show_film_page(request):
     characters = {}
     for character_url in film["characters"]:
         char_req = http.request('GET', character_url)
-        char_json = char_req.decode('utf8')
+        char_json = char_req.data.decode('utf8')
         character = json.loads(char_json)
         char_name = character["name"]
         char_url = character["url"]

@@ -5,7 +5,7 @@
     <title>T1 de Joaquin Castillo - SWAPI ulala</title>
 </head>
 <body>
-{% if film and characters %}
+{% if film and characters and starships%}
 
 
     <table style="width:100%">
@@ -31,14 +31,18 @@
         </tr>
         <tr>
             <th>Starships:</th>
-            <td>{{ film.starships }}</td>
+            {% for ship in starships.items %}
+                <td>
+                {{  ship.1 }}
+                </td>
+            {% endfor %}
         </tr>
         <tr>
             <th>Personajes:</th>
 
             {% for char in characters.items %}
                 <td>
-                {{  char.0 }}
+                {{  char.1 }}
                 </td>
             {% endfor %}
         </tr>

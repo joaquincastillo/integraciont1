@@ -56,6 +56,8 @@ def show_film_page(request):
     r = http.request('GET', req_url)
     my_json = r.data.decode('utf8')
     film = json.loads(my_json)
+
+    # Obteniendo info de los personajes
     characters = {}
     for character_url in film["characters"]:
         char_req = http.request('GET', character_url)
@@ -65,11 +67,22 @@ def show_film_page(request):
         char_url = character["url"]
         pos = char_url.find("people")
         url_id = character["url"][pos+7:len(character["url"])-1]
-        characters[char_name] = url_id
+        characters[url_id] = char_name
 
+    # Obteniendo info de las starships
+    starships = {}
+    for ship_url in film["starships"]:
+        ship_req = http.request('GET', ship_url)
+        ship_json = ship_req.data.decode('utf8')
+        ship = json.loads(ship_json)
+        ship_name = ship["name"]
+        s_url = ship["url"]
+        pos = s_url.find("people")
+        url_id = ship["url"][pos + 10:len(ship["url"]) - 1]
+        starships[url_id] = ship_name
 
-
-    return render(request, 'film_page.html', {"film": film, "characters": characters})
+    return render(request, 'film_page.html', {"film": film, "characters": characters,
+                                              "starships": starships})
 
 
 

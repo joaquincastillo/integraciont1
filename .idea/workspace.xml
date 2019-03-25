@@ -39,7 +39,6 @@
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/settings.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../t1iic3113/t1iic3113/wsgi.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/t1/templates/film_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/t1/templates/film_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/t1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/t1/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../writer.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../~$database.xlsx" beforeDir="false" />
@@ -74,11 +73,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/t1/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="96" column="88" selection-start-line="96" selection-start-column="88" selection-end-line="96" selection-end-column="88" />
+            <state relative-caret-position="171">
+              <caret line="88" column="40" lean-forward="true" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -101,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
+            <state relative-caret-position="96">
               <caret line="22" column="32" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="32" />
               <folding>
                 <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -122,10 +121,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/t1/templates/film_page.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
+            <state relative-caret-position="-1">
               <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
               <folding>
                 <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -222,8 +221,8 @@
         <option value="$PROJECT_DIR$/t1/templates/film/film_page.html" />
         <option value="$PROJECT_DIR$/t1/templates/principal_page.html" />
         <option value="$PROJECT_DIR$/t1/urls.py" />
-        <option value="$PROJECT_DIR$/t1/views.py" />
         <option value="$PROJECT_DIR$/t1/templates/film_page.html" />
+        <option value="$PROJECT_DIR$/t1/views.py" />
       </list>
     </option>
   </component>
@@ -393,12 +392,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553262337647</updated>
-      <workItem from="1553262354079" duration="51927000" />
+      <workItem from="1553262354079" duration="52087000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51927000" />
+    <option name="totallyTimeSpent" value="52087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="354" y="43" width="882" height="688" extended-state="0" />
@@ -559,9 +558,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/t1/templates/film_page.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/t1/templates/principal_page.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
+        <state relative-caret-position="96">
           <caret line="22" column="32" lean-forward="true" selection-start-line="21" selection-start-column="8" selection-end-line="22" selection-end-column="32" />
           <folding>
             <element signature="n#style#0;n#tr#0;n#tbody#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -571,20 +580,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/t1/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="96" column="88" selection-start-line="96" selection-start-column="88" selection-end-line="96" selection-end-column="88" />
+        <state relative-caret-position="171">
+          <caret line="88" column="40" lean-forward="true" selection-start-line="88" selection-start-column="40" selection-end-line="88" selection-end-column="40" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/t1/templates/film_page.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

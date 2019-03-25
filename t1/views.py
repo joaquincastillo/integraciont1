@@ -90,7 +90,7 @@ def show_film_page(request):
         planet_name = planet["name"]
         p_url = planet["url"]
         pos = p_url.find("planets")
-        url_id = ship["url"][pos + 8:len(ship["url"]) - 1]
+        url_id = planet["url"][pos + 8:len(planet["url"]) - 1]
         planets[url_id] = planet_name
 
     return render(request, 'film_page.html', {"film": film, "characters": characters,

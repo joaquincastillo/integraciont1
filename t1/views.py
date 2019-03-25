@@ -220,6 +220,7 @@ def show_starship_page(request):
                                                   "films": films})
 
 def show_search_page(request):
+    acc = []
     search = request.GET.get("search")
     filtro = request.GET.get("filter")
     req_url = "https://swapi.co/api/{}/?search={}".format(filtro, search)
@@ -227,9 +228,17 @@ def show_search_page(request):
     r = http.request('GET', req_url)
     my_json = r.data.decode('utf8')
     results = json.loads(my_json)
+    acc += results["results"]
+
+    while results["next"] != "None":
+        next_req = results["next"]
+        res = http.request('GET', next_req)
+        res_json = res.data.decode('utf8')
+        res_dict = json.loads(res_json)
+        acc += res_dict["results"]
 
 
-    context = {"search": search, "filter": filtro, "results": results}
+    context = {"search": search, "filter": filtro, "results": acc}
     return render(request, 'search_page.html', context)
 
 

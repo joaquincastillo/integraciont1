@@ -29,31 +29,7 @@
             <th>Fecha de lanzamiento:</th>
             <td>{{ film.release_date }}</td>
         </tr>
-        <tr>
-            <th>Starships:</th>
-            {% for ship in starships.items %}
-                <td>
-                {{  ship.1 }}
-                </td>
-            {% endfor %}
-        </tr>
-        <tr>
-            <th>Personajes:</th>
 
-            {% for char in characters.items %}
-                <td>
-                {{  char.1 }}
-                </td>
-            {% endfor %}
-        </tr>
-        <tr>
-            <th>Planetas:</th>
-            {% for planet in planets.items %}
-                <td>
-                {{  planet.1 }}
-                </td>
-            {% endfor %}
-        </tr>
     </table>
 
     <h2>Personajes</h2>

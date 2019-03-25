@@ -20,33 +20,7 @@
 
 <br><br>
 {% if film and characters and starships and planets %}
-
-
-
-    <table style="width:100%">
-        <tr>
-          <th>Titulo:</th>
-          <td>{{ film.title }}</td>
-        </tr>
-        <tr>
-          <th>Episode:</th>
-          <td>{{ film.episode_id }}</td>
-        </tr>
-        <tr>
-          <th>Director:</th>
-          <td>{{ film.director }}</td>
-        </tr>
-        <tr>
-            <th>Productor(es):</th>
-            <td>{{ film.producer }}</td>
-        </tr>
-        <tr>
-            <th>Fecha de lanzamiento:</th>
-            <td>{{ film.release_date }}</td>
-        </tr>
-
-    </table>
-
+    
     <h2> Titulo: </h2>{{ film.title }}
     <h2> Episodio: </h2>{{ film.episode_id }}
     <h2> Director: </h2>{{ film.director }}
